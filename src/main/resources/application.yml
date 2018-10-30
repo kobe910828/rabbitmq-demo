@@ -1,0 +1,11 @@
+server:
+  port: 6666
+spring:
+  application:
+    name: Rabbitmq-Demo
+  rabbitmq:
+    host: 192.168.158.141
+    port: 5672
+    username: huang
+    password: 910611
+    virtual-host: /test-host
