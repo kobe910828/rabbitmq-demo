@@ -3,23 +3,20 @@ server:
 spring:
   application:
     name: Rabbitmq-Demo
-  rabbitmq:
-    host: 192.168.158.141 #HAProxy服务ip地址
-    port: 5670 #HAProxy服务监听的rabbitmq集群端口号(配置文件里)
-    username: huang
-    password: 910611
-    virtual-host: /test-host
-
-### 集群配置
+#  rabbitmq:
+#    host: 192.168.158.141 #HAProxy服务ip地址
+#    port: 5670 #HAProxy服务监听的rabbitmq集群端口号(配置文件里)
+#    username: huang
+#    password: 910611
+#    virtual-host: /test-host
 #  rabbitmq:
 #    addresses: 192.168.158.141:5672,192.168.158.141:5673,192.168.158.141:5674
 #    username: huang
 #    password: 910611
 #    virtual-host: /test-host
-### 单机配置
-#  rabbitmq:
-#    host: 192.168.158.141
-#    port: 5672
-#    username: huang
-#    password: 910611
-#    virtual-host: /test-host
+  rabbitmq:
+    host: 192.168.173.145
+    port: 5672
+    username: test
+    password: test
+    virtual-host: tms
